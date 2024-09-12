@@ -28,39 +28,38 @@
     </header>
     <section class="tabs">
       <div class="container text-med">
-        <div id="tab-1" class="tab-item">
+        <div id="tab-1" class="tab-item tab-border">
           <!-- <img src="../img/img_1.png" alt="" class="imgs" /> -->
           <!-- <p>3D Printing</p> -->
-          <a href="#">3D Printing</a>
+          <a href="#" class="hide-sm">3D Printing</a>
         </div>
         <div id="tab-2" class="tab-item">
           <!-- <img src="../img/img_2.png" alt="" class="imgs" /> -->
           <!-- <p>3D Modelling</p> -->
-          <a href="#">3D Modelling</a>
+          <a href="#" class="hide-sm">3D Modelling</a>
         </div>
         <div id="tab-3" class="tab-item">
           <!-- <img src="../img/img_3.png" alt="" class="imgs" /> -->
           <!-- <p>3D Products</p> -->
-          <a href="#">3D Products</a>
+          <a href="#" class="hide-sm">3D Products</a>
         </div>
       </div>
     </section>
     <section class="tab-content">
-      <div class="container-content">
-        <div class="tab-1-content">
-          <img src="../img/3d_printer.svg" alt="Mav3d Logo" class="src2" />
-          <p>Create detailed digital models ready for 3D printing.</p>
-        </div>
-        <div class="tab-2-content">
-          <img src="../img/3d_model.svg" alt="Mav3d Logo" class="src2" />
-          <p>Create detailed digital models ready for 3D printing.</p>
-        </div>
-        <div class="tab-2-content">
-          <img src="../img/3d_product.svg" alt="Mav3d Logo" class="src2" />
-          <p>Create detailed digital models ready for 3D printing.</p>
-        </div>
+      <div id="tab-1-content" class="tab-content-item show">
+        <img src="../img/3d_printer.svg" alt="3D Printer" class="src2" />
+        <p>Create detailed digital models ready for 3D printing.</p>
+      </div>
+      <div id="tab-2-content" class="tab-content-item">
+        <img src="../img/3d_model.svg" alt="3D Model" class="src2" />
+        <p>Create detailed digital models ready for 3D modelling.</p>
+      </div>
+      <div id="tab-3-content" class="tab-content-item">
+        <img src="../img/3d_product.svg" alt="3D Product" class="src2" />
+        <p>Create detailed digital models ready for 3D products.</p>
       </div>
     </section>
+
     <footer class="footer text-light">
       <!-- <p>For more Information</p> -->
       <div class="footer-cols">
@@ -76,5 +75,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="../js/main.js"></script>
   </body>
 </html>

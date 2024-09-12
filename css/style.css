@@ -2,7 +2,7 @@
 :root {
   --primary-color: #fff;
   --dark-color: #141414;
-  --light-color: white;
+  --light-color: #8cd0e0;
 }
 
 * {
@@ -33,6 +33,16 @@ h4 {
   font-weight: 500;
   font-size: 3rem;
   letter-spacing: 0.4rem;
+}
+
+.showcase-content h1,
+.showcase-content p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white; /* Ensure text is visible */
+  margin: 0.5rem 0; /* Adjust margins to control spacing */
 }
 
 a {
@@ -125,16 +135,6 @@ img {
   background-size: cover;
 }
 
-.showcase-content h1,
-.showcase-content p {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  color: white; /* Ensure text is visible */
-  margin: 0.5rem 0; /* Adjust margins to control spacing */
-}
-
 .showcase-content-para {
   margin-top: 1rem; /* Space between heading and paragraph */
 }
@@ -186,9 +186,25 @@ img {
   margin: 0.5rem auto;
 }
 
-.tab-1-content,
-.tab-2-content,
-.tab-3-content {
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.tab-content-item {
+  display: none; /* Hide all tab content items by default */
+}
+
+.tab-content-item.show {
+  display: block; /* Show the selected tab content */
+}
+
+.tab-content-item {
   max-width: 1200px;
   /* flex-direction: row; */
   display: flex;
@@ -244,8 +260,17 @@ img {
   opacity: 0.6;
 }
 
+.btn-rounded {
+  border-radius: 2px;
+}
+
 a:hover {
   opacity: 0.4;
+}
+
+.tab-border {
+  border: var(--light-color) 1px solid;
+  border-radius: 4px;
 }
 
 /* .tabs .container .tab-item a {
@@ -273,9 +298,9 @@ a:hover {
     margin: auto;
   }
 
-  .tab-1-content,
-  .tab-2-content,
-  .tab-3-content {
+  #tab-1-content,
+  #tab-2-content,
+  #tab-3-content {
     /* max-width: 1200px; */
     /* flex-direction: row; */
     display: block;
