@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-  --primary-color: #000;
+  --primary-color: #fff;
   --dark-color: #141414;
   --light-color: white;
 }
@@ -12,42 +12,48 @@
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: #111;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: #fff;
+  color: #000;
 }
 
-h1 {
+.showcase-content h1 {
   /* text-transform: uppercase; */
   /* text-align: center; */
-  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  padding-top: 1.5rem;
+  font-weight: 500;
   font-size: 3rem;
   letter-spacing: 0.4rem;
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
-p {
-  /* margin: 0.5rem 0; */
+.showcase-top a {
+  color: #fff;
 }
+
+/* p {
+} */
 
 img {
   width: 10%;
 }
 
 .showcase-top {
-  background-color: #ed3c94;
+  /* background-color: #ed3c94; */
+  background-color: #bfd1d5;
   width: 80%;
   border-radius: 5px;
   max-width: 1200px;
@@ -118,7 +124,7 @@ img {
   /* top: 10%; */
   /* margin-top: 2rem; */
   /* z-index: 2; */
-  background: url("../img/main_background.jpg") no-repeat center center/cover;
+  background: url("../img/3_main_background.jpg") no-repeat center center/cover;
   background-size: cover;
 }
 
