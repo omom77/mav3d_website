@@ -37,6 +37,7 @@ h4 {
 
 a {
   color: #000;
+  font-weight: 350;
   text-decoration: none;
 }
 
@@ -120,7 +121,7 @@ img {
   /* top: 10%; */
   /* margin-top: 2rem; */
   /* z-index: 2; */
-  background: url("../img/3_main_background.jpg") no-repeat center center/cover;
+  background: url("../img/3_main_background.jpg") no-repeat bottom center/cover;
   background-size: cover;
 }
 
@@ -143,8 +144,11 @@ img {
   padding-top: 1rem;
   border-bottom: 3px solid #3d3d3d;
 } */
+.container {
+  max-width: 70%;
+}
 
-.tabs .container {
+/* .tabs .container {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -154,16 +158,46 @@ img {
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
+} */
+
+.tabs .container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #dfe7ea;
+  width: 80%;
+  border-radius: 5px;
+  padding: 0.4rem;
+  text-transform: uppercase;
 }
 
 .tabs a {
-  font-size: 1.4rem;
-  padding-top: 0.2rem;
+  margin: 10px;
+  padding: 0 4rem;
 }
 
 .tabs .container .imgs {
   width: 100%;
   margin: 0.5rem auto;
+}
+
+.tab-1-content,
+.tab-2-content,
+.tab-3-content {
+  max-width: 1200px;
+  /* flex-direction: row; */
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem auto;
 }
 
 .text-light {
@@ -201,7 +235,7 @@ img {
 
 .footer li {
   line-height: 1.9;
-  text-align: left;
+  text-align: center;
 }
 
 /* Buttons */
@@ -212,4 +246,50 @@ img {
 
 a:hover {
   opacity: 0.4;
+}
+
+/* .tabs .container .tab-item a {
+  font-size: 1rem; 
+} */
+
+/* Add Media Query for Responsive Tabs */
+@media (max-width: 800px) {
+  .tabs .container .tab-item a {
+    font-size: 2rem; /* Adjust the font size if needed */
+  }
+  .showcase-content h1 {
+    font-size: 2rem;
+  }
+
+  /* Hide original text on small screens */
+  #tab-1 a,
+  #tab-2 a,
+  #tab-3 a {
+    /* display: inline-block; */
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .tab-1-content,
+  .tab-2-content,
+  .tab-3-content {
+    /* max-width: 1200px; */
+    /* flex-direction: row; */
+    display: block;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  /* Adjust padding and spacing for smaller screens */
+  .tabs .container {
+    /* Stack tabs vertically */
+    grid-template-columns: 1fr;
+  }
 }
