@@ -14,26 +14,26 @@
     <title>Mav3D landing Page</title>
   </head>
   <body>
-    <header class="showcase">
+    <header class="showcase px-1">
       <div
-        class="showcase-top mx-auto bg-darkcyan rounded-md flex items-center justify-between px-2 py-2 max-w-screen-lg my-4"
+        class="showcase-top mx-auto bg-darkcyan rounded-md flex items-center justify-between px-1 max-w-screen-lg my-4"
       >
         <!-- DW logo is black -->
         <img
           id="img_1"
           src="../img/m3d_black_logo.png"
           alt="Mav3d Logo"
-          class="h-12"
+          class="h-10 w-auto p-1"
         />
         <!-- <div class="flex-initial justify-center"> -->
-        <img
+        <!-- <img
           id="img_2"
           src="../img/cube_logo.png"
           alt="Mav3d Logo"
           class="h-10"
-        />
+        /> -->
         <!-- <div class="flex-1 flex justify-"> -->
-        <a id="button" href="#" class="btn btn-rounded hover:opacity-60"
+        <a id="button" href="#" class="btn btn-rounded hover:opacity-60 p-1"
           >Contact Us</a
         >
       </div>
@@ -49,9 +49,9 @@
         <!-- <p class="showcase-content-para">Explore your ideas with Mav3D</p> -->
       </div>
     </header>
-    <section class="tabs">
+    <section class="tabs px-1">
       <div
-        class="container mx-auto bg-lightcyan rounded-md flex items-center justify-between px-2 py-2 max-w-screen-lg my-4"
+        class="container mx-auto bg-lightcyan rounded-md flex items-center justify-between px-6 py-2 max-w-screen-lg my-4"
       >
         <div id="tab-1" class="tab-item tab-border">
           <!-- <img src="../img/img_1.png" alt="" class="imgs" /> -->
@@ -71,32 +71,61 @@
       </div>
     </section>
     <section class="tab-content">
-      <div id="tab-1-content" class="tab-content-item show">
-        <img src="../img/3d_printer.svg" alt="3D Printer" class="src2" />
-        <p>Create detailed digital models ready for 3D printing.</p>
+      <div
+        id="tab-1-content"
+        class="tab-content-item show flex items-center justify-between max-w-screen-lg mx-auto"
+      >
+        <img
+          src="../img/3d_printer.svg"
+          alt="3D Printer"
+          class="h-20 w-auto mx-auto my-1"
+        />
+        <p class="m-auto px-2">
+          Create detailed digital models ready for 3D printing.
+        </p>
       </div>
-      <div id="tab-2-content" class="tab-content-item">
-        <img src="../img/3d_model.svg" alt="3D Model" class="src2" />
-        <p>Create detailed digital models ready for 3D modelling.</p>
+      <div
+        id="tab-2-content"
+        class="tab-content-item flex items-center justify-between max-w-screen-lg mx-auto"
+      >
+        <img
+          src="../img/3d_model.svg"
+          alt="3D Model"
+          class="h-20 w-auto mx-auto my-1"
+        />
+        <p class="m-auto px-2">
+          Create detailed digital models ready for 3D modelling.
+        </p>
       </div>
-      <div id="tab-3-content" class="tab-content-item">
-        <img src="../img/3d_product.svg" alt="3D Product" class="src2" />
-        <p>Create detailed digital models ready for 3D products.</p>
+      <div
+        id="tab-3-content"
+        class="tab-content-item flex items-center justify-between max-w-screen-lg mx-auto"
+      >
+        <img
+          src="../img/3d_product.svg"
+          alt="3D Product"
+          class="h-20 w-auto mx-auto my-1"
+        />
+        <p class="m-auto px-2">
+          Create detailed digital models ready for 3D products.
+        </p>
       </div>
     </section>
 
     <footer class="footer text-light">
       <!-- <p>For more Information</p> -->
-      <div class="footer-cols">
-        <ul>
+      <div
+        class="footer-cols flex items-center justify-between max-w-screen-lg mx-auto my-5"
+      >
+        <ul class="mx-auto hover:opacity-60">
           <!-- <li><a href="#">Phone: +91 88283 55035</a></li> -->
-          <li><a href="#">Browse Products</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#" class="hover:opacity-60">Browse Products</a></li>
+          <li><a href="#" class="hover:opacity-60">Contact Us</a></li>
         </ul>
-        <ul>
+        <ul class="mx-auto">
           <!-- <li><a href="#">Email: mav3dprint@gmail.com</a></li> -->
-          <li><a href="#">Mission</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="#" class="hover:opacity-60">Mission</a></li>
+          <li><a href="#" class="hover:opacity-60">Careers</a></li>
         </ul>
       </div>
     </footer>
