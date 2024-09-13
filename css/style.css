@@ -162,9 +162,12 @@ img {
 
 .tabs .container {
   max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
-  grid-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* 3 columns by default */
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; */
   align-items: center;
   justify-content: center;
   text-align: center;
